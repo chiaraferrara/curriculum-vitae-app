@@ -12,8 +12,9 @@ export default function Certificates() {
       >
         <h4>Boolean Data Week November 2023</h4>
         <Description>
-          Boolean Data Week is a week of training on data
-          analysis, data visualization and data science using Python, Pandas and Tableau.</Description>
+          Boolean Data Week is a week of training on data analysis, data
+          visualization and data science using Python, Pandas and Tableau.
+        </Description>
         <Divider />
         <h4>
           A.I.F.E.S. - Italian Association of Trainers and Experts in Safety

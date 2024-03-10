@@ -19,7 +19,7 @@ export default function Projects() {
 <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt="I vinili di Maurizio"
         height="140"
         image={GifVinili}
       />
@@ -34,7 +34,6 @@ export default function Projects() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
         <Button onClick={() =>{
           window.open("https://github.com/chiaraferrara/I_Vinili_Di_Maurizio")
         }}size="small">Repository</Button>
