@@ -11,10 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['Projects', 'Repositories', 'Contacts'];
+const pages = ['Projects', 'Repository', 'Contacts'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
@@ -92,18 +91,27 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={() => {
+                  handleCloseNavMenu () 
+                  if(page === "Projects"){
+                    navigate(`/${page}`)
+                  } else if(page === "Repository"){
+                    window.open("https://github.com/chiaraferrara/curriculum-vitae-app")
+                  }else if(page === "Contacts"){
+                    navigate(`/${page}`)
+                  
+                  }}}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

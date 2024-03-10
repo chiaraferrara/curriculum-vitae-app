@@ -22,9 +22,7 @@ export default function Education() {
               <Title>Web and Mobile Development ITS Steve Jobs Academy</Title>
               <div>
               <p>
-                Field of study: Software and applications development
-                and analysis.<br/>
-                Level in EQF: EQF level 5<br/>
+                Qualification: EQF level 5<br/>
               </p>
               <Table>
             <Tr>
