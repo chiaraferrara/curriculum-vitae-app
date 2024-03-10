@@ -124,10 +124,12 @@ function Header() {
               >
                 Projects
               </Button>
-              <Button onClick={handleCloseNavMenu}
+              <Button onClick={() => {handleCloseNavMenu()
+              window.open("https://github.com/chiaraferrara/curriculum-vitae-app")}
+              }
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                Repositories
+                Repository
               </Button>
 
               <Button onClick={() => {navigate('/contacts')}}

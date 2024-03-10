@@ -50,6 +50,7 @@ function a11yProps(index: number) {
 }
 
 function Home() {
+  const [data, setData] = useState<any>([]);
   const theme = useTheme();
   const [value, setValue] = React.useState(1);
 
@@ -73,7 +74,7 @@ function Home() {
 
   useEffect(() => {
     // fetchData();
-    // console.log(data)
+    // console.log(fetchData())
   }, []);
 
   return (

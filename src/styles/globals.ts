@@ -82,3 +82,16 @@ export const Img = styled.img`
 background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(243,253,255,1) 75%, rgba(228,230,230,1) 85%, rgba(224,224,224,1) 85%, rgba(136,122,150,1) 85%, rgba(168,152,185,1) 100%);
         box-shadow: 0 0 10px #a1a1a1;
     `;
+
+
+    export const ProjectImg = styled.img`
+    width: 500px;
+    `;  
+
+    export const ProjectsDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    `;

@@ -4,7 +4,6 @@ import { Description, Title } from "../styles/globals";
 export default function Experience() {
   return (
     <>
-      <Title>Experience</Title>
       <div
         style={{
           justifyContent: "flex-start",
