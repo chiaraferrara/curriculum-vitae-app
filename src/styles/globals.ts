@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Button } from "@mui/material";
 
 export const Img = styled.img`
   width: 200px;
@@ -89,6 +90,7 @@ export const GlobalWrapper = styled.div`
     rgba(168, 152, 185, 1) 100%
   );
   box-shadow: 0 0 10px #a1a1a1;
+  min-height: 90vh;
 `;
 
 export const ProjectImg = styled.img`
@@ -101,4 +103,71 @@ export const ProjectsDiv = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
+`;
+
+
+export const MessageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start
+  padding: 1px;
+  text-align: left;
+  width: 60%;
+  margin: auto;
+`;
+
+export const BootstrapButton = styled(Button)({
+  boxShadow: 'none',
+  textTransform: 'none',
+  fontSize: 16,
+  padding: '6px 12px',
+  border: '1px solid',
+  lineHeight: 1.5,
+  backgroundColor: '#887a96',
+  borderColor: '#0063cc',
+  fontFamily: [
+    '-apple-system',
+    'BlinkMacSystemFont',
+    '"Segoe UI"',
+    'Roboto',
+    '"Helvetica Neue"',
+    'Arial',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(','),
+  '&:hover': {
+    backgroundColor: '#0069d9',
+    borderColor: '#0062cc',
+    boxShadow: 'none',
+  },
+  '&:active': {
+    boxShadow: 'none',
+    backgroundColor: '#0062cc',
+    borderColor: '#005cbf',
+  },
+  '&:focus': {
+    boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+  },
+});
+
+
+export const Paragr = styled.div`
+  font-size: 16px;
+  margin:0;
+  width: fit-content;
+`;
+
+export const Caption = styled.div`
+  font-size: 10px;
+  margin:0;
+  width: fit-content;
+`;
+
+export const PTitle = styled.h4`
+text-align: center;
+  font-size: 22px;
+  font-weight: bold;
 `;

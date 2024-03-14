@@ -16,6 +16,7 @@ export default function Education() {
             <div style={{
                 justifyContent:"flex-start",
                 textAlign:"start",
+                backgroundColor:"#ffffff"
             }}>
               
                 <Chip label="2022 – 2024"/>

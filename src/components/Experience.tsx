@@ -8,6 +8,8 @@ export default function Experience() {
         style={{
           justifyContent: "flex-start",
           textAlign: "start",
+          backgroundColor:"#ffffff",
+          padding: "10px",
         }}
       >
         <Chip label="Oct 2019 - Nov 2019"/>
