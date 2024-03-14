@@ -44,6 +44,7 @@ export default function Infos() {
           <Chip label="Graphic Design" />
           <Chip label="Art" />
           <Chip label="Traveling" />
+          <Chip label="Programming" />
           <br />
         </Description>
       </Column>

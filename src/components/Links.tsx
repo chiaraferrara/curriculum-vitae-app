@@ -14,11 +14,11 @@ export default function Links() {
           display: "flex",
           flexDirection: "row",
           marginInline: "auto",
-          justifyContent: "flex-start",
+          justifyContent: "center",
           padding: "10px",
         }}
       >
-        Links: &nbsp;
+        <strong>Links:</strong> &nbsp;
         <Link
           color="inherit"
           underline="none"

@@ -83,9 +83,9 @@ function Home() {
         <FlexRow>
           <Infos />
           <FlexColumn>
-            <Links />
+            
 
-            <Box sx={{ maxWidth: "400px" , margin: "0" , padding: "0", fontSize: "5px" }}>
+            <Box sx={{ maxWidth: "400px" , margin: "0" , padding: "0", fontSize: "5px"  ,   justifyContent: "center", marginInline:"3%", paddingTop:"3%" }}>
               <AppBar position="static" color="default">
                 <Tabs
                   value={value}
@@ -120,6 +120,7 @@ function Home() {
                 
               </SwipeableViews>
             </Box>
+            
           </FlexColumn>
         </FlexRow>
       </GlobalWrapper>

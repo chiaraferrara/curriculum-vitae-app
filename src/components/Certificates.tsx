@@ -8,6 +8,8 @@ export default function Certificates() {
         style={{
           justifyContent: "flex-start",
           textAlign: "start",
+          backgroundColor:"#ffffff",
+          padding: "10px",
         }}
       >
         <h4>Boolean Data Week November 2023</h4>

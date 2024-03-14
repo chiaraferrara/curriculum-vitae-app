@@ -39,28 +39,9 @@ export default function Footer() {
       >
         <CssBaseline />
         <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+       
           <Typography variant="h2" component="h1" gutterBottom>
-            Contacts
-          </Typography>
-          <Typography variant="h2" component="h1" gutterBottom>
-          <ButtonGroup
-            color="primary"
-            disabled={false}
-            orientation="horizontal"
-            size="large"
-            variant="contained"
-          >
-              <Button onClick={() =>{
-                window.open("https://github.com/chiaraferrara")
-              }}>Github</Button><Button
-              onClick={() =>{
-               window.open("https://www.linkedin.com/in/chiara-ferrara-41273a265/")
-              }}
-              >Linkedin</Button><Button 
-              onClick={() =>{
-                window.open("https://mail.google.com/mail/?view=cm&fs=1&to=ferrarachiara4@gmail.com&su=Your%20subject%20here&body=+")
-              }}>Email</Button>
-            </ButtonGroup>
+         
           </Typography>
 
           <Divider />

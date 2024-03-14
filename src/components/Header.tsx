@@ -111,7 +111,7 @@ function Header() {
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            onClick={() => navigate('/')}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -133,14 +133,14 @@ function Header() {
                 Projects
               </Button>
               <Button onClick={() => {handleCloseNavMenu()
-              window.open("https://github.com/chiaraferrara/curriculum-vitae-app")}
+              window.open("https://github.com/chiaraferrara/")}
               }
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                Repository
+                Github
               </Button>
 
-              <Button onClick={() => {navigate('/contacts')}}
+              <Button onClick={() => {navigate('/contact')}}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 Contacts
@@ -151,6 +151,7 @@ function Header() {
         </Toolbar>
       </Container>
     </AppBar>
+    
   );
 }
 export default Header;
