@@ -175,7 +175,7 @@ const handleValidEmailClick = () => {
         </div>
       </div>
 
-      <Accordion  style={{width:"30%", margin:"auto"}} defaultExpanded>
+      <Accordion  style={{width:"80%", margin:"auto"}} defaultExpanded>
         <AccordionSummary
        
           expandIcon={<Expand />}

@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['Projects', 'Repository', 'Contacts'];
+const pages = ['Projects', 'Repository', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
@@ -97,7 +97,7 @@ function Header() {
                     navigate(`/${page}`)
                   } else if(page === "Repository"){
                     window.open("https://github.com/chiaraferrara/curriculum-vitae-app")
-                  }else if(page === "Contacts"){
+                  }else if(page === "Contact"){
                     navigate(`/${page}`)
                   
                   }}}>
@@ -143,7 +143,7 @@ function Header() {
               <Button onClick={() => {navigate('/contact')}}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                Contacts
+                Contact
               </Button>
           </Box>
 
