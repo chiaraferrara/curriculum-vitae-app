@@ -175,7 +175,7 @@ const handleValidEmailClick = () => {
         </div>
       </div>
 
-      <Accordion  style={{width:"80%", margin:"auto"}} defaultExpanded>
+      {/* <Accordion  style={{width:"80%", margin:"auto"}} defaultExpanded>
         <AccordionSummary
        
           expandIcon={<Expand />}
@@ -207,7 +207,7 @@ const handleValidEmailClick = () => {
           )}
           <p style={{margin: "auto", textAlign:"center", fontSize:"10px"}}>This list is only visible to you and deletion has permanent effects.</p>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
       
     </>
   );
