@@ -86,7 +86,7 @@ export const GlobalWrapper = styled.div`
     rgba(136, 122, 150, 1) 85%,
     rgba(168, 152, 185, 1) 100%
   );
-  min-height: 80vh;
+  min-height: 100vh;
   justify-content: center;
 `;
 
