@@ -10,6 +10,7 @@ export default function Certificates() {
           textAlign: "start",
           backgroundColor:"#ffffff",
           padding: "10px",
+          width: "40vh",
         }}
       >
         <h4>Boolean Data Week November 2023</h4>

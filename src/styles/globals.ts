@@ -2,13 +2,8 @@ import styled from "@emotion/styled";
 import { Button } from "@mui/material";
 
 export const Img = styled.img`
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
   margin: 0 auto;
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
 `;
 
 export const FlexColumn = styled.div`
@@ -19,6 +14,7 @@ export const FlexColumn = styled.div`
   text-align: center;
   align-items: center;
   margin: 0px;
+  ;
 `;
 
 export const Paragraph = styled.div`
@@ -48,8 +44,9 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
+  flex-wrap: wrap;
 `;
 export const Column = styled.div`
   display: flex;
@@ -73,7 +70,7 @@ export const Table = styled.table`
 `;
 
 export const GlobalWrapper = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-flow: wrap;
   background-color: #f5f5f5;
@@ -89,8 +86,8 @@ export const GlobalWrapper = styled.div`
     rgba(136, 122, 150, 1) 85%,
     rgba(168, 152, 185, 1) 100%
   );
-  box-shadow: 0 0 10px #a1a1a1;
-  min-height: 90vh;
+  min-height: 80vh;
+  justify-content: center;
 `;
 
 export const ProjectImg = styled.img`

@@ -6,6 +6,7 @@ import {
   FlexRow,
   Img,
   Paragraph,
+  Row,
   Title,
 } from "../styles/globals";
 import { Chip } from "@mui/material";
@@ -14,11 +15,15 @@ import Divider from "@mui/material/Divider";
 export default function Infos() {
   return (
     <>
-      <Column>
+    <Column style={{
+      alignItems: "flex-end",
+      alignSelf: "baseline",    }}>
+      <Row>
         <img
           style={{
             borderRadius: "100%",
-            width: "130px",
+            width: "70px",
+            padding: "2%",
           }}
           src="https://i.ibb.co/zGwJLk3/image.png"
         />{" "}
@@ -38,7 +43,8 @@ export default function Infos() {
           </Description>
           <Divider />
         </Paragraph>
-        <Description style={{ width: "200px" }}>
+        
+      </Row><Description style={{ width: "200px" }}>
           <Title>My interests</Title>
           <Chip label="Front End Development" />
           <Chip label="Graphic Design" />
@@ -46,8 +52,7 @@ export default function Infos() {
           <Chip label="Traveling" />
           <Chip label="Programming" />
           <br />
-        </Description>
-      </Column>
+        </Description></Column>
     </>
   );
 }

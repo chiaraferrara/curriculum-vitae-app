@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['Projects', 'Repository', 'Contact'];
+const pages = ['Projects', 'Github', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
@@ -95,8 +95,8 @@ function Header() {
                   handleCloseNavMenu () 
                   if(page === "Projects"){
                     navigate(`/${page}`)
-                  } else if(page === "Repository"){
-                    window.open("https://github.com/chiaraferrara/curriculum-vitae-app")
+                  } else if(page === "Github"){
+                    window.open("https://github.com/chiaraferrara/")
                   }else if(page === "Contact"){
                     navigate(`/${page}`)
                   

@@ -10,6 +10,7 @@ export default function Experience() {
           textAlign: "start",
           backgroundColor:"#ffffff",
           padding: "10px",
+          width: "40vh",
         }}
       >
         <Chip label="Oct 2019 - Nov 2019"/>
@@ -17,7 +18,7 @@ export default function Experience() {
         <strong>Le vie dei tesori</strong>
         <Description>
         Palazzo Bonocore, Palermo. <br/>
-        I carried out activities until the interruption due to the COVID-19 pandemic. Subsequently, I focused on translating into English for tourists eager to visit the sites once activities resumed.
+        I carried out activities until the interruption due to the COVID-19 pandemic. <br/>Subsequently, I focused on translating into English for tourists eager to visit the sites once activities resumed.
         </Description>
         <Divider />
       
