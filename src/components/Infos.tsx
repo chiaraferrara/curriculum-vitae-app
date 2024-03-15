@@ -6,19 +6,32 @@ import {
   FlexRow,
   Img,
   Paragraph,
+  Row,
   Title,
 } from "../styles/globals";
 import { Chip } from "@mui/material";
 import Divider from "@mui/material/Divider";
 
+const interests = ["front end development", "graphic design", "art", "traveling", "programming"];
+
 export default function Infos() {
   return (
     <>
-      <Column>
+    <Column style={{
+      alignItems: "flex-end",
+      alignSelf: "baseline", 
+      flexDirection: "column",
+      justifyContent: "center"   }}>
+      <Row style={{
+        alignItems: "flex-end",
+        alignSelf: "flex-end", 
+        flexDirection: "row-reverse",
+        justifyContent: "center"   }}>
         <img
           style={{
             borderRadius: "100%",
-            width: "130px",
+            width: "70px",
+            padding: "2%",
           }}
           src="https://i.ibb.co/zGwJLk3/image.png"
         />{" "}
@@ -28,7 +41,7 @@ export default function Infos() {
           <br />
           <br />
           <Divider />
-          <Description style={{ width: "200px" }}>
+          <Description style={{ width: "300px" }}>
             I am a passionate coding student who is building skills in both
             front-end and back-end development. Creative and detail-oriented, I
             strive to create engaging digital experiences. With a fervent
@@ -38,16 +51,15 @@ export default function Infos() {
           </Description>
           <Divider />
         </Paragraph>
-        <Description style={{ width: "200px" }}>
+        
+      </Row><Description style={{ padding: "10px" , width: "70%", alignSelf: "center", textAlign: "end"}}>
           <Title>My interests</Title>
-          <Chip label="Front End Development" />
-          <Chip label="Graphic Design" />
-          <Chip label="Art" />
-          <Chip label="Traveling" />
-          <Chip label="Programming" />
-          <br />
-        </Description>
-      </Column>
+
+          {interests.map((interest) => (
+            <Chip style={{padding: "2px"}} label={interest} />
+          
+          ))}
+        </Description></Column>
     </>
   );
 }

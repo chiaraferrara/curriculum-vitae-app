@@ -11,12 +11,13 @@ export default function Education() {
   return (
     <>
     
-      <Stack spacing={2}>
+      <Stack style={{backgroundColor: "white"}}spacing={2}>
         {page === 1 && (
             <div style={{
                 justifyContent:"flex-start",
                 textAlign:"start",
-                backgroundColor:"#ffffff"
+                backgroundColor:"#ffffff",
+                width: "40vh",
             }}>
               
                 <Chip label="2022 – 2024"/>
@@ -68,6 +69,7 @@ export default function Education() {
              <div style={{
                 justifyContent:"flex-start",
                 textAlign:"start",
+                width: "40vh",
             }}><Chip label="2018 – 2022"/>
                 <Title>Political Science & International Relations</Title>
                 <div>

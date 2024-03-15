@@ -82,10 +82,14 @@ function Home() {
       <GlobalWrapper>
         <FlexRow>
           <Infos />
-          <FlexColumn>
-            
-
-            <Box sx={{ maxWidth: "400px" , margin: "0" , padding: "0", fontSize: "5px"  ,   justifyContent: "center", marginInline:"3%", paddingTop:"3%" }}>
+          <FlexColumn style={{ }}>
+           
+            <Box
+              sx={{
+                margin: "0",
+                padding: "0",
+              }}
+            >
               <AppBar position="static" color="default">
                 <Tabs
                   value={value}
@@ -104,23 +108,17 @@ function Home() {
                 index={value}
                 onChangeIndex={handleChangeIndex}
               >
-                <TabPanel
-                  value={value}
-                  index={0}
-                  dir={theme.direction}
-                >
-                  <Experience/>
+                <TabPanel value={value} index={0} dir={theme.direction}>
+                  <Experience />
                 </TabPanel>
                 <TabPanel value={value} index={1} dir={theme.direction}>
                   <Education />
                 </TabPanel>
                 <TabPanel value={value} index={2} dir={theme.direction}>
-                  <Certificates/>
+                  <Certificates />
                 </TabPanel>
-                
               </SwipeableViews>
             </Box>
-            
           </FlexColumn>
         </FlexRow>
       </GlobalWrapper>
