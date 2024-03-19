@@ -70,6 +70,7 @@ export default function Education() {
                 justifyContent:"flex-start",
                 textAlign:"start",
                 width: "40vh",
+                
             }}><Chip label="2018 – 2022"/>
                 <Title>Political Science & International Relations</Title>
                 <div>

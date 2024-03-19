@@ -86,11 +86,12 @@ function Home() {
            
             <Box
               sx={{
+                
                 margin: "0",
                 padding: "0",
               }}
             >
-              <AppBar position="static" color="default">
+              <AppBar position="static" color="default" style={{marginTop:'20px'}}>
                 <Tabs
                   value={value}
                   onChange={handleChange}
