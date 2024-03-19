@@ -170,7 +170,7 @@ const handleValidEmailClick = () => {
             >
               Submit
             </BootstrapButton>
-            <p style={{margin: "auto", textAlign:"center", fontSize:"10px"}}>You can delete your messages anytime.<br/>(deletion is permanent)</p>
+            {/* <p style={{margin: "auto", textAlign:"center", fontSize:"10px"}}>You can delete your messages anytime.<br/>(deletion is permanent)</p> */}
           </FlexColumn>
         </div>
       </div>

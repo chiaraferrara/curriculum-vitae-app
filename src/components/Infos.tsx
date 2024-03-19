@@ -21,7 +21,7 @@ export default function Infos() {
       alignItems: "flex-end",
       alignSelf: "baseline", 
       flexDirection: "column",
-      justifyContent: "center"   }}>
+      justifyContent: "flex-start"   }}>
       <Row style={{
         alignItems: "flex-end",
         alignSelf: "flex-end", 
@@ -30,7 +30,7 @@ export default function Infos() {
         <img
           style={{
             borderRadius: "100%",
-            width: "70px",
+            width: "80px",
             padding: "2%",
           }}
           src="https://i.ibb.co/zGwJLk3/image.png"
@@ -41,8 +41,8 @@ export default function Infos() {
           <br />
           <br />
           <Divider />
-          <Description style={{ width: "300px" }}>
-            I am a passionate coding student who is building skills in both
+          <Description style={{ width: "360px" }}>
+            I am a passionate coding student from Italy who is building skills in both
             front-end and back-end development. Creative and detail-oriented, I
             strive to create engaging digital experiences. With a fervent
             curiosity and a commitment to continuous learning, I am constantly
@@ -52,11 +52,11 @@ export default function Infos() {
           <Divider />
         </Paragraph>
         
-      </Row><Description style={{ padding: "10px" , width: "70%", alignSelf: "center", textAlign: "end"}}>
-          <Title>My interests</Title>
+      </Row><Description style={{ padding: "4px" ,  alignSelf: "center", textAlign: "center", width: '80%' }}>
+          <Title style={{textAlign: 'center'}}>My interests</Title>
 
           {interests.map((interest) => (
-            <Chip style={{padding: "2px"}} label={interest} />
+            <Chip style={{margin: "2px"}} label={interest} />
           
           ))}
         </Description></Column>
