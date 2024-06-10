@@ -29,7 +29,7 @@ const SchoolContainer = styled.div`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background: #6394b7;
+    background: #313131;
     color: #ffffff;
   }
 `;

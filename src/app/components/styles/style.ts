@@ -49,3 +49,40 @@ const Skills = styled.p`
   color: #000000;
   margin: 5px 0;
 `;
+
+
+
+const Div = styled.div`
+  width: 50%;
+  background-color: #ffffff;
+  color: black;
+  padding-top: 120px;
+  padding-inline: 2%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const Paragraph = styled.p`
+  font-size: 20px;
+  padding-inline: 20px;
+  margin: 0;
+`;
+
+const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  color: black;
+  padding: 8%;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+`;

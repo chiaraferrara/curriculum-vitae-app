@@ -4,7 +4,7 @@ const ChipStyle = styled.div`
   display: inline-block;
   padding: 0.5em 1em;
   margin: 0.5em;
-  background: #6394b7;
+  background: #a2a9b7;
   color: #ffffff;
   border-radius: 20px;
   font-size: 12px;

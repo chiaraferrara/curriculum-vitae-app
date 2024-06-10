@@ -47,7 +47,7 @@ const TimelineMarker = styled.div<{ primaryColor?: string }>`
   left: 0;
   width: 15px;
   &:before {
-    background: ${(props) => props.primaryColor || "#6396b6"};
+    background: ${(props) => props.primaryColor || "#a2a9b7"};
     border: 3px solid transparent;
     border-radius: 100%;
     content: "";
@@ -55,7 +55,7 @@ const TimelineMarker = styled.div<{ primaryColor?: string }>`
     height: 15px;
     position: absolute;
     top: 4px;
-    left: 0;
+    left: -2px;
     width: 15px;
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   }
