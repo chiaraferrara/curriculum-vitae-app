@@ -4,6 +4,10 @@ import Education from "./Education";
 import { useContext, useEffect } from "react";
 import { Context } from "../providers/PageProvider";
 import Projects from "./Project";
+import SkillProgress from "./Skills";
+import QRCode from "../assets/CV.png";
+import Arrow from "../assets/arrow.png";
+import Contact from "./Contact";
 const Div = styled.div`
   width: 60%;
   background-color: #ffffff;
@@ -26,7 +30,6 @@ const Card = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  border-radius: 20px 20px 0px 0px;
   color: black;
   padding: 8%;
   width: 100%;
@@ -44,20 +47,31 @@ export default function MainPage() {
     <>
       <Div>
         {page === "PageOne" ? (
-          <Paragraph style={{ margin: "10%" }}>
-            <i>I am a passionate software developer</i>{" "}
-            <b>who is building skills in both</b>
-            <u> front-end</u>{" "}
-            <b>
-              <i>and</i>
-            </b>{" "}
-            <u>back-end development</u>.<i>Creative</i> <b>and</b>{" "}
-            detail-oriented, I strive to create engaging digital experiences. I
-            am committed to continuous learning and growth.
-            <i>I am constantly expanding my knowledge in both areas</i>.
-            <i>I am excited to contribute to projects</i>{" "}
-            <b>that blend aesthetics and functionality</b>.
-          </Paragraph>
+          <>
+            <Paragraph style={{ margin: "10%", marginTop: "15%" }}>
+              I'm a Junior Front End Developer who is building up skills in both
+              front end and back end developement. I have a passion for learning
+              new technologies and I am always looking for new opportunities to
+              learn. I love problem solving and I am always looking for new
+              challenges. I am currently working as a Junior Front End Developer
+              at <a href="https://www.topnetwork.it/">TopNetwork S.p.A.</a>
+            </Paragraph>
+            <div
+              style={{
+                margin: "auto",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              {" "}
+              <img
+                style={{ width: "120px", height: "120px" }}
+                src={QRCode.src}
+                alt="QR Code"
+              />{" "}
+              <img src={Arrow.src} alt="Arrow" />{" "}
+            </div>
+          </>
         ) : null}
 
         <Card>
@@ -68,7 +82,9 @@ export default function MainPage() {
               <Education />
             </>
           )}
-          {page === "PageTwo" ? <Projects /> : null}
+          {page === "PageTwo" && <Projects />}
+          {page === "PageFour" && <SkillProgress />}
+          {page === "PageFive" && <Contact />}
         </Card>
       </Div>
     </>

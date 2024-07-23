@@ -228,7 +228,7 @@ const TextAnimate: FC<Props> = ({
           return (
             <motion.span
               ref={ref}
-              className="inline-block mr-[0.25em] whitespace-nowrap"
+              className="inline-block mr-[0.25em] ##000000space-nowrap"
               aria-hidden="true"
               key={index}
               initial="hidden"

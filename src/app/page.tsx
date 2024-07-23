@@ -6,16 +6,23 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import PageProvider from "./providers/PageProvider";
 import { ChakraProvider } from "@chakra-ui/react";
+import { useEffect } from "react";
+import BarComponent from "./components/Bar";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Chiara Ferrara";
+  }, []);
   return (
-    <ChakraProvider>
-      <PageProvider>
-        <main className={styles.main}>
-          <Header />
-          <Main />
-        </main>
-      </PageProvider>
-    </ChakraProvider>
+    <BarComponent>
+      <ChakraProvider>
+        <PageProvider>
+          <main className={styles.main}>
+            <Header />
+            <Main />
+          </main>
+        </PageProvider>
+      </ChakraProvider>
+    </BarComponent>
   );
 }

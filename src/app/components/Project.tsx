@@ -7,18 +7,19 @@ import { Box, ChakraProvider, Image, Text } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+
 const Container = styled.div`
   width: 100%;
   padding: 1rem;
   display: flex;
-  background: #1d1c1a;
+  background: #ffffff;
   flex-direction: row;
   border-radius: 10px;
 `;
 
 const ProjectCard = styled.div`
-  background: #1d1c1a;
-  color: #949392;
+  background: #ffffff;
+  color: #262527;
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
@@ -74,12 +75,12 @@ const Projects = () => {
             sx={{ columnCount: [1, 2], columnGap: "12px" }}
           >
             {" "}
-            <Text fontSize="6xl" color={"#949392 "}>
+            <Text fontSize="6xl" color={"##000000 "}>
               Projects
             </Text>
             {projects.map((project, index) => (
               <ProjectCard key={index}>
-                <h3>{project.name}</h3>
+                <h2>{project.name}</h2>
 
                 <hr />
                 <Chip label={project.date} />

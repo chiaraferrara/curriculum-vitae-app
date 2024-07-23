@@ -1,8 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Moul&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moul&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* @font-face {
+  font-family: "Harper";
+  src: url("/assets/harper.ttf") format("truetype");
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+@font-face {
+  font-family: "Harper";
+  src: url("/assets/harper.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nifty";
+  src: url("/assets/nifty.ttf") format("truetype");
+}
 
 .main {
   display: flex;
@@ -11,14 +24,13 @@
   font-optical-sizing: auto;
   font-weight: 300;
   justify-content: space-between;
-  background-color: #1a1a1a;
+  background-color: #262527;
   align-items: center;
   min-height: 100vh;
 }
 
-.h1 {
-  font-family: "Alata", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
+.title {
+  font-family: "Nifty", sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
 }

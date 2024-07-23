@@ -64,7 +64,7 @@ export const projects = [
   {
     name: "I Vinili Di Maurizio",
     description:
-      "Virtual Vinyl Collection Manager is a user-friendly CRUD web application designed for organizing vinyl records. With features including user registration, login, adding, editing, and deleting records, along with a dashboard for user management, it offers a seamless experience for vinyl enthusiasts to curate their collections effortlessly.",
+      "Virtual Vinyl Collection Manager is a user-friendly CRUD web application designed for organizing vinyl records. With features including user registration, login, adding, editing, and deleting records, along with a dashboard for user management, it offers a seamless experience for vinyl enthusiasts to curate their collections effortlessly. The project started as a team project during our Angular Classes and I implemented further database features. The name is a reference to our teacher, who taught us the use of Git and Angular.",
     link: "https://github.com/chiaraferrara/I_Vinili_Di_Maurizio",
     image:
       "https://www.chiaraferrara.it/static/media/vinili.c78067f175d0a3327867.gif",
@@ -87,19 +87,18 @@ export const projects = [
    
   },
   {
-    name: "Recipe Finder",
+    name: "To do List",
     description:
-      "Recipe Finder is a web application that allows users to search for recipes based on ingredients they have at home. Users can filter recipes by dietary preferences, cuisine types, and cooking time, making it easy to find the perfect meal idea.",
-    link: "https://github.com/username/recipe-finder",
-    image: "https://via.placeholder.com/1024x600",
-    technologies: ["React", "Node.js", "PostgreSQL"],
-    date: "Work in progress",
+      "The to-do list is a web application that allows users to create, edit, and delete tasks. It is a simple application that allows users to add, edit, and delete tasks. It is a simple application that allows users to add, edit, and delete tasks.",
+    link: "https://github.com/chiaraferrara/Flask-for-Python",
+    technologies: ["Flask", "Python",],
+    date: "2023",
     features: [
-      "Ingredient Search: Users can search for recipes based on available ingredients.",
-      "Dietary Preferences: Filter recipes by dietary preferences such as vegan, vegetarian, gluten-free, etc.",
-      "Cuisine Types: Explore recipes from various cuisines around the world.",
-      "Cooking Time: Find recipes based on the time required to cook."
+     "Add Task: Users can add a task to the to-do list.",
+     "Edit Task: Users can edit a task in the to-do list.",
+     "Delete Task: Users can delete a task from the to-do list.",
     ],
   },
+  
   
 ];

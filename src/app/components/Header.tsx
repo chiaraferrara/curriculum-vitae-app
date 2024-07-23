@@ -1,25 +1,29 @@
 import styled from "@emotion/styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import avatar from "../assets/avatar.png";
-import styles from "../page.module.css"; // Consider removing if not used
-import { TextAnimate } from "./TextAnimate"; // Check if this is used
-import { MainHeading } from "./styles/style"; // Ensure consistency in importing styles
-import background from "../assets/bg.png";
+
 import Navbar from "./Navbar";
 import { Text } from "@chakra-ui/react";
+import styles from "../page.module.css";
 
-// Styled components for improved readability and maintainability
 const CardContainer = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1d1c1a;
-  color: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 237, 237, 1) 50%,
+    rgba(237, 237, 237, 1) 99%,
+    rgba(224, 224, 224, 1) 100%,
+    rgba(208, 208, 208, 1) 100%
+  );
+  color: #000000;
   height: 400px;
-  backdrop-filter: blur(10px); /* Frosted glass effect */
+  backdrop-filter: blur(10px);
 
   /* Responsive design */
   @media (max-width: 768px) {
@@ -41,7 +45,7 @@ const SubHeading = styled.div`
 const Email = styled.div`
   font-size: 1.2em;
   margin-top: 0.5em;
-  color: #a2a9b7; /* Consider using a variable or constant */
+  color: #222222;
 `;
 
 const IconLinksContainer = styled.div`
@@ -51,10 +55,10 @@ const IconLinksContainer = styled.div`
 `;
 
 const IconLink = styled.a`
-  color: white;
+  color: ##000000;
   font-size: 1.5em;
   &:hover {
-    color: #a2a9b7;
+    color: #313233;
   }
 `;
 
@@ -63,7 +67,7 @@ function Header() {
   return (
     <>
       <CardContainer>
-        <Text style={{ fontSize: "3em", padding: "0" }}>Chiara Ferrara</Text>
+        <h1 className={styles.title}>Chiara Ferrara</h1>
         <SubHeading>Junior Front End Developer</SubHeading>
         <Email>ferrarachiara4@gmail.com</Email>
         {/* Social media icons */}
