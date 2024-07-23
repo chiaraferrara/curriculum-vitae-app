@@ -8,28 +8,32 @@ import { Bar, Skill, SkillBar, SkillP, Wrapper } from "../styles";
 
 const skills = [
   { name: "HTML5", percentage: "95%" },
+  { name: "CSS", percentage: "95%" },
+  { name: "REACT", percentage: "95%" },
   { name: "NEXT.JS", percentage: "85%" },
-  { name: "TYPESCRIPT", percentage: "80%" },
-  { name: "SQL", percentage: "75%" },
-  { name: "ANGULAR", percentage: "65%" },
-  {
-    name: "JAVASCRIPT",
-    percentage: "87%",
-    certificate: "/certificates/js.pdf",
-  },
+  { name: "TYPESCRIPT", percentage: "85%" },
+  { name: "SQL", percentage: "85%" },
   {
     name: "POSTGRESQL",
-    percentage: "70%",
+    percentage: "85%",
     certificate: "/certificates/postgresql.pdf",
   },
+
+  {
+    name: "JAVASCRIPT",
+    percentage: "85%",
+    certificate: "/certificates/js.pdf",
+  },
+  { name: "ANGULAR", percentage: "75%" },
 
   {
     name: "DOCKER",
     percentage: "70%",
     certificate: "/certificates/docker.pdf",
   },
-  { name: "PHP", percentage: "60%" },
   { name: "MONGODB", percentage: "65%" },
+  { name: "PHP", percentage: "60%" },
+
   { name: "JAVA", percentage: "55%" },
   { name: "PYTHON", percentage: "50%" },
 ];
@@ -39,7 +43,12 @@ const SkillProgress = () => (
     <Wrapper>
       <br />
       <h1 style={{ fontSize: "2em" }}>Skills & Certificates</h1>
-      <p>Always developing my skills. </p>
+
+      <p>
+        Disclaimer: the percentages show my comfort level and not my level of
+        knowledge. <br />
+        Always developing my skills.{" "}
+      </p>
       <br />
       {skills.map((skill, index) => (
         <Skill key={index}>
