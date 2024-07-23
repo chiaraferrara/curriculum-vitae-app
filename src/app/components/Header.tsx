@@ -1,9 +1,7 @@
 import styled from "@emotion/styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-
 import Navbar from "./Navbar";
-import { Text } from "@chakra-ui/react";
 import styles from "../page.module.css";
 
 const CardContainer = styled.div`
@@ -22,12 +20,14 @@ const CardContainer = styled.div`
     rgba(208, 208, 208, 1) 100%
   );
   color: #000000;
-  height: 400px;
+  padding-bottom: 50px;
+  height: fit-content;
   backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   /* Responsive design */
   @media (max-width: 768px) {
-    height: 150px;
+    height: 300px;
   }
 
   @media (max-width: 480px) {
@@ -37,15 +37,24 @@ const CardContainer = styled.div`
   }
 `;
 
+const Title = styled.h1`
+  font-size: 3.5em;
+  margin: 0;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+`;
+
 const SubHeading = styled.div`
   font-size: 1.5em;
   margin-top: 0.5em;
+  color: #555;
 `;
 
 const Email = styled.div`
   font-size: 1.2em;
   margin-top: 0.5em;
-  color: #222222;
+  color: #222;
 `;
 
 const IconLinksContainer = styled.div`
@@ -55,22 +64,36 @@ const IconLinksContainer = styled.div`
 `;
 
 const IconLink = styled.a`
-  color: ##000000;
+  color: #000;
   font-size: 1.5em;
   &:hover {
     color: #313233;
   }
 `;
 
-// Header component
+const InfoContainer = styled.div`
+  text-align: center;
+  margin-top: 1em;
+`;
+
+const AboutMe = styled.p`
+  font-size: 1em;
+  margin-top: 1em;
+  color: #666;
+  line-height: 1.5;
+  max-width: 600px;
+`;
+
 function Header() {
   return (
     <>
       <CardContainer>
-        <h1 className={styles.title}>Chiara Ferrara</h1>
+        <Title className={styles.title}>Chiara Ferrara</Title>
         <SubHeading>Junior Front End Developer</SubHeading>
         <Email>ferrarachiara4@gmail.com</Email>
-        {/* Social media icons */}
+        <InfoContainer>
+          <div>Palermo, Italy</div>
+        </InfoContainer>
         <IconLinksContainer>
           <IconLink
             href="https://www.linkedin.com/in/chiara-ferrara-41273a265/"
@@ -80,14 +103,14 @@ function Header() {
             <FontAwesomeIcon icon={faLinkedin} />
           </IconLink>
           <IconLink
-            href="https://github.com/chiaraferrara/"
+            href="https://github.com/chiaraferrara"
             target="_blank"
             aria-label="GitHub"
           >
             <FontAwesomeIcon icon={faGithub} />
           </IconLink>
         </IconLinksContainer>
-        {/* Navigation bar */}
+
         <Navbar />
       </CardContainer>
     </>

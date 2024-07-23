@@ -1,8 +1,7 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { Context } from "../providers/PageProvider";
 import styled from "@emotion/styled";
 import avatar from "../assets/avatar.jpeg";
-import { Text } from "@chakra-ui/react";
 
 const NavbarContainer = styled.div`
   display: flex;
@@ -10,12 +9,18 @@ const NavbarContainer = styled.div`
   align-items: center;
   background-color: #313233;
   padding: 10px;
-  color: #;
+  color: #ffffff;
   border-radius: 2em;
   position: absolute;
-  bottom: -45px;
+  bottom: -25px;
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 19px 5px rgb(0 0 0 / 18%);
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
   @media (max-width: 768px) {
     padding: 5px;
   }
@@ -35,7 +40,7 @@ const Button = styled.button<{ clicked: boolean }>`
     props.clicked ? "0 4px 8px rgba(0, 0, 0, 0.2)" : "none"};
 
   &:hover {
-    background-color: #e1d5dd;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   @media (max-width: 768px) {
@@ -47,7 +52,12 @@ const AvatarStyle = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid ##000000;
+  border: 2px solid #ffffff;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @media (max-width: 768px) {
     display: none;
@@ -83,6 +93,7 @@ const MenuContainer = styled.div<{ showMenu: boolean }>`
   right: 0;
   z-index: 1000;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: ${(props) => (props.showMenu ? "1" : "0")};
@@ -98,7 +109,7 @@ const IconContainer = styled.div`
 `;
 
 const Menu = styled.div<{ showMenu: boolean }>`
-  display: "none";
+  display: none;
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -118,7 +129,7 @@ const Btn = styled.button`
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  color: ##000000;
+  color: #ffffff;
   font-weight: 600;
   margin-inline: 10px;
   margin: 10px 0;
@@ -126,7 +137,7 @@ const Btn = styled.button`
 
 export default function Navbar() {
   const [clickedButton, setClickedButton] = useState("");
-  const { setPage, page } = useContext(Context);
+  const { setPage } = useContext(Context);
   const [showMenu, setShowMenu] = useState(false);
 
   const handleClick = (pageName: string) => {
@@ -136,10 +147,6 @@ export default function Navbar() {
       setClickedButton("");
     }, 300);
   };
-  useEffect(() => {
-    console.log(page);
-    console.log(showMenu);
-  }, [page, showMenu]);
 
   return (
     <>

@@ -97,7 +97,7 @@ export const SchoolContainer = styled.div`
   &:hover {
     background: #383636;
     color: #ffffff;
-    cursor: progress;
+    cursor: crosshair;
 
     div {
       background: #ffffff;

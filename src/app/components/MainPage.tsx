@@ -48,7 +48,7 @@ export default function MainPage() {
       <Div>
         {page === "PageOne" ? (
           <>
-            <Paragraph style={{ margin: "10%", marginTop: "15%" }}>
+            <Paragraph style={{ margin: "10%", marginTop: "9%" }}>
               I&apos;m a Junior Front End Developer who is building up skills in
               both front end and back end developement. I have a passion for
               learning new technologies and I am always looking for new
