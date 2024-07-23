@@ -49,12 +49,13 @@ export default function MainPage() {
         {page === "PageOne" ? (
           <>
             <Paragraph style={{ margin: "10%", marginTop: "15%" }}>
-              I'm a Junior Front End Developer who is building up skills in both
-              front end and back end developement. I have a passion for learning
-              new technologies and I am always looking for new opportunities to
-              learn. I love problem solving and I am always looking for new
-              challenges. I am currently working as a Junior Front End Developer
-              at <a href="https://www.topnetwork.it/">TopNetwork S.p.A.</a>
+              I&apos;m a Junior Front End Developer who is building up skills in
+              both front end and back end developement. I have a passion for
+              learning new technologies and I am always looking for new
+              opportunities to learn. I love problem solving and I am always
+              looking for new challenges. I am currently working as a Junior
+              Front End Developer at{" "}
+              <a href="https://www.topnetwork.it/">TopNetwork S.p.A.</a>
             </Paragraph>
             <div
               style={{
