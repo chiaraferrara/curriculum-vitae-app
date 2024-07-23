@@ -66,39 +66,36 @@ export const projects = [
     description:
       "Virtual Vinyl Collection Manager is a user-friendly CRUD web application designed for organizing vinyl records. With features including user registration, login, adding, editing, and deleting records, along with a dashboard for user management, it offers a seamless experience for vinyl enthusiasts to curate their collections effortlessly. The project started as a team project during our Angular Classes and I implemented further database features. The name is a reference to our teacher, who taught us the use of Git and Angular.",
     link: "https://github.com/chiaraferrara/I_Vinili_Di_Maurizio",
-    image:
-      "https://www.chiaraferrara.it/static/media/vinili.c78067f175d0a3327867.gif",
-      technologies: ["Angular", "Firebase", "Typescript"],
-      date: "2023",
+    image: "/photos/vinili.gif",
+    technologies: ["Angular", "Firebase", "Typescript"],
+    date: "2023",
   },
-{
+  {
     name: "Elite Basketball",
-    description: "A tournament management application for basketball developed using Next.js.",
+    description:
+      "A tournament management application for basketball developed using Next.js.",
     link: "https://github.com/chiaraferrara/elite-basketball-app",
-    
+
     technologies: ["Next.js", "MySQL"],
     date: "2024",
     features: [
       "Login: Admin-only access to advanced features.",
       "Team Management: Admins can add new teams and players, assigning players to specific teams.",
       "Team Detail View: Users can view details of each team, including the coach and players.",
-      "Score Management: System for managing game scores, following typical basketball logic."
+      "Score Management: System for managing game scores, following typical basketball logic.",
     ],
-   
   },
   {
     name: "To do List",
     description:
       "The to-do list is a web application that allows users to create, edit, and delete tasks. It is a simple application that allows users to add, edit, and delete tasks. It is a simple application that allows users to add, edit, and delete tasks.",
     link: "https://github.com/chiaraferrara/Flask-for-Python",
-    technologies: ["Flask", "Python",],
+    technologies: ["Flask", "Python"],
     date: "2023",
     features: [
-     "Add Task: Users can add a task to the to-do list.",
-     "Edit Task: Users can edit a task in the to-do list.",
-     "Delete Task: Users can delete a task from the to-do list.",
+      "Add Task: Users can add a task to the to-do list.",
+      "Edit Task: Users can edit a task in the to-do list.",
+      "Delete Task: Users can delete a task from the to-do list.",
     ],
   },
-  
-  
 ];
