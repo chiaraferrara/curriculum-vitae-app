@@ -10,15 +10,7 @@ const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(241, 237, 237, 1) 50%,
-    rgba(237, 237, 237, 1) 99%,
-    rgba(224, 224, 224, 1) 100%,
-    rgba(208, 208, 208, 1) 100%
-  );
+  background-color: #ffffff;
   color: #000000;
   padding-bottom: 50px;
   height: fit-content;
