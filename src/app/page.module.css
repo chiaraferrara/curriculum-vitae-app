@@ -17,14 +17,13 @@
   font-optical-sizing: auto;
   font-weight: 300;
   justify-content: space-between;
-  background-color: #262527;
+  background-color: #ffffff;
   align-items: center;
   min-height: 100vh;
 }
 
 .title {
   font-family: "Nifty", sans-serif;
-  font-weight: bolder;
-  font-size: 5em;
+  font-size: 6em;
   text-align: center;
 }

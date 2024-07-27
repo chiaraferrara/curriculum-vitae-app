@@ -57,7 +57,7 @@ export const TimelineMarker = styled.div<{ primaryColor?: string }>`
   &:after {
     content: "";
     width: 3px;
-    background: #262527;
+    background: #000000;
     display: block;
     position: absolute;
     top: 24px;

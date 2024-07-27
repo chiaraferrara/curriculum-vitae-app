@@ -10,12 +10,18 @@ const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
-  color: #000000;
+
+  // background-image: url("https://i.ibb.co/yQwNMPp/White-Simple-Marketing-Agency-Twitter-Header-9.png");
+  background-size: cover;
+  background-position: center;
+  background-position-y: 80%;
+  background-position-x: 40%;
+  background-repeat: no-repeat;
+  background-color: #313234;
+  color: #f5f6ee;
   padding-bottom: 50px;
   height: fit-content;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   /* Responsive design */
   @media (max-width: 768px) {
@@ -30,23 +36,23 @@ const CardContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 3.5em;
+  // font-size: 3.5em;
   margin: 0;
-  font-weight: 700;
-  color: #333;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 2.5em;
+  }
 `;
 
 const SubHeading = styled.div`
-  font-size: 1.5em;
   margin-top: 0.5em;
-  color: #555;
 `;
 
 const Email = styled.div`
   font-size: 1.2em;
-  margin-top: 0.5em;
-  color: #222;
+  margin-top: 0em;
+  color: #e4e6e7;
 `;
 
 const IconLinksContainer = styled.div`
@@ -65,7 +71,6 @@ const IconLink = styled.a`
 
 const InfoContainer = styled.div`
   text-align: center;
-  margin-top: 1em;
 `;
 
 const AboutMe = styled.p`
@@ -92,14 +97,14 @@ function Header() {
             target="_blank"
             aria-label="LinkedIn"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} color="#e4e6e7" />
           </IconLink>
           <IconLink
             href="https://github.com/chiaraferrara"
             target="_blank"
             aria-label="GitHub"
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} color="#e4e6e7" />
           </IconLink>
         </IconLinksContainer>
 

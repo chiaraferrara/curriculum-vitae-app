@@ -1,4 +1,4 @@
-import styled from "@emotion/styled"
+import styled from "@emotion/styled";
 
 export const Container = styled.div`
   background: #000000;
@@ -13,6 +13,5 @@ export const MainHeading = styled.h1`
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 `;
-

@@ -20,8 +20,7 @@ const Container = styled.div`
 const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;ss
 `;
 
 const Input = styled.input`

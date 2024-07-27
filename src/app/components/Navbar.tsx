@@ -7,14 +7,13 @@ const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #313233;
+  background-color: #ffffff;
   padding: 10px;
-  color: #ffffff;
   border-radius: 2em;
   position: absolute;
   bottom: -25px;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0 0 19px 5px rgb(0 0 0 / 18%);
+  box-shadow: 1px 3px 3px 0px rgb(0 0 0 / 18%);
   transform: scale(1);
 
   &:hover {
@@ -27,21 +26,14 @@ const NavbarContainer = styled.div`
 `;
 
 const Button = styled.button<{ clicked: boolean }>`
-  background-color: ${(props) => (props.clicked ? "#f2e1eb" : "transparent")};
+  background-color: "transparent";
   text-transform: uppercase;
   border: none;
-  color: #ffffff;
+  color: #313234;
   cursor: pointer;
   margin-inline: 10px;
-  transition: background-color 0.3s ease, transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   transform: ${(props) => (props.clicked ? "scale(1.1)" : "scale(1)")};
-  box-shadow: ${(props) =>
-    props.clicked ? "0 4px 8px rgba(0, 0, 0, 0.2)" : "none"};
-
-  &:hover {
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
 
   @media (max-width: 768px) {
     display: none;
@@ -73,25 +65,28 @@ const HamburgerIcon = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 10000;
   }
 `;
 
 const HamburgerLine = styled.div`
   width: 20px;
   height: 1px;
-  background-color: #f2e1eb;
+  background-color: #313234;
   margin: 3px 0;
   transition: all 0.3s ease;
+
+  z-index: 10000;
 `;
 
 const MenuContainer = styled.div<{ showMenu: boolean }>`
   background-color: #313233;
   position: fixed;
   height: 100%;
-  top: 0;
+  top: -10px;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
