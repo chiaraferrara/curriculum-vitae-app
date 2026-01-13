@@ -2,6 +2,10 @@
   "name": "chiara-ferrara-cv",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -24,6 +28,7 @@
     "react-responsive-masonry": "^2.2.0",
     "react-use-measure": "^2.1.1",
     "react-wow": "^1.0.0",
+    "sharp": "^0.34.5",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {

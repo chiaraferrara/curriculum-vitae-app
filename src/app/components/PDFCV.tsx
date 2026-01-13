@@ -145,7 +145,7 @@ const PDFDocument = () => (
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>About</Text>
         <Text style={styles.itemDescription}>
-          I'm a Front End Developer who is building up skills in both front end and back end development. 
+          I&apos;m a Front End Developer who is building up skills in both front end and back end development. 
           I have a passion for learning new technologies and I am always looking for new opportunities to learn. 
           I love problem solving and I am always looking for new challenges. I am currently working as a 
           Front End Developer at TopNetwork S.p.A.
