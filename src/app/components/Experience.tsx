@@ -21,7 +21,7 @@ const Timeline = ({ items }: any) => (
           <TimelineInfo>
             <span>{item.years}</span>
           </TimelineInfo>
-          <TimelineMarker />
+          <TimelineMarker isLast={index === experienceData.jobs.length - 1} />
           <TimelineContent>
             <h3>
               {item.title} at {item.company}

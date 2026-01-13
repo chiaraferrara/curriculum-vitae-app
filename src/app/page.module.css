@@ -1,29 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
-
-@font-face {
-  font-family: "Harper";
-  src: url("/fonts/harper.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Nifty";
-  src: url("/fonts/nifty.woff") format("truetype");
-}
-
 .main {
   display: flex;
   flex-direction: column;
-  font-family: "Alata", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  justify-content: space-between;
-  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  justify-content: flex-start;
+  background-image: url('/photos/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
 }
 
 .title {
-  font-family: "Nifty", sans-serif;
-  font-size: 6em;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
   text-align: center;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }

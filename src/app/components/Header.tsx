@@ -10,75 +10,74 @@ const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: var(--spacing-2xl) var(--spacing-md) var(--spacing-xl);
+  position: relative;
+  border-bottom: 1px solid var(--color-border);
 
-  // background-image: url("https://i.ibb.co/yQwNMPp/White-Simple-Marketing-Agency-Twitter-Header-9.png");
-  background-size: cover;
-  background-position: center;
-  background-position-y: 80%;
-  background-position-x: 40%;
-  background-repeat: no-repeat;
-  background-color: #313234;
-  color: #f5f6ee;
-  padding-bottom: 50px;
-  height: fit-content;
-  backdrop-filter: blur(10px);
-
-  /* Responsive design */
   @media (max-width: 768px) {
-    height: 300px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 10px;
-    padding-top: 10%;
-    height: 400px;
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
   }
 `;
 
 const Title = styled.h1`
-  // font-size: 3.5em;
   margin: 0;
   text-align: center;
-
-  @media (max-width: 768px) {
-    font-size: 2.5em;
-  }
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-family: var(--font-outfit), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
 `;
 
 const SubHeading = styled.div`
-  margin-top: 0.5em;
+  margin-top: var(--spacing-xs);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--color-text-light);
+  letter-spacing: 0.01em;
 `;
 
-const Email = styled.div`
-  font-size: 1.2em;
-  margin-top: 0em;
-  color: #e4e6e7;
+const Email = styled.a`
+  font-size: 0.9375rem;
+  margin-top: var(--spacing-md);
+  color: var(--color-text-light);
+  transition: color var(--transition-fast);
+  
+  &:hover {
+    color: var(--color-accent-hover);
+  }
 `;
 
 const IconLinksContainer = styled.div`
-  margin-top: 1em;
+  margin-top: var(--spacing-md);
   display: flex;
-  gap: 1em;
+  gap: var(--spacing-md);
+  align-items: center;
 `;
 
 const IconLink = styled.a`
-  color: #000;
-  font-size: 1.5em;
+  color: var(--color-text-light);
+  font-size: 1.25rem;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   &:hover {
-    color: #313233;
+    color: var(--color-accent-hover);
+    transform: translateY(-2px);
   }
 `;
 
 const InfoContainer = styled.div`
   text-align: center;
-`;
-
-const AboutMe = styled.p`
-  font-size: 1em;
-  margin-top: 1em;
-  color: #666;
-  line-height: 1.5;
-  max-width: 600px;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-top: var(--spacing-xs);
 `;
 
 function Header() {
@@ -86,25 +85,27 @@ function Header() {
     <>
       <CardContainer>
         <Title className={styles.title}>Chiara Ferrara</Title>
-        <SubHeading>Junior Front End Developer</SubHeading>
-        <Email>ferrarachiara4@gmail.com</Email>
+        <SubHeading> Front End Developer</SubHeading>
+        <Email href="mailto:ferrarachiara4@gmail.com">ferrarachiara4@gmail.com</Email>
         <InfoContainer>
-          <div>Palermo, Italy</div>
+          Palermo, Italy
         </InfoContainer>
         <IconLinksContainer>
           <IconLink
             href="https://www.linkedin.com/in/chiara-ferrara-41273a265/"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <FontAwesomeIcon icon={faLinkedin} color="#e4e6e7" />
+            <FontAwesomeIcon icon={faLinkedin} />
           </IconLink>
           <IconLink
             href="https://github.com/chiaraferrara"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <FontAwesomeIcon icon={faGithub} color="#e4e6e7" />
+            <FontAwesomeIcon icon={faGithub} />
           </IconLink>
         </IconLinksContainer>
 

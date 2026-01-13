@@ -2,7 +2,7 @@ export const experienceData = {
   jobs: [
     {
       company: "TopNetwork S.p.A.",
-      title: "Junior Software Developer",
+      title: "Software Developer",
       years: "2024 - Present",
       description: "Full time",
     },
@@ -14,7 +14,7 @@ export const experienceData = {
     },
     {
       company: "Le vie dei tesori",
-      title: "Front desk receptionist, guided tours, and surveillance.",
+      title: "Front desk receptionist, guided tours, and surveillance",
       years: "2019 - 2020",
       description:
         "I carried out activities a tourist guide until the interruption due to the COVID-19 pandemic. Subsequently, I focused on translating into English for tourists eager to visit the sites once activities resumed.",
@@ -61,6 +61,19 @@ const certificatesData = {
 };
 
 export const projects = [
+  {
+    name: "SnapClean",
+    description:
+    "SnapClean is a React Native mobile application that groups similar photos from the device gallery. Born from a personal need to organize and clean up photo collections, the app automatically identifies duplicate and similar images. Users can efficiently manage their photos with bulk deletion capabilities.", link: "https://github.com/chiaraferrara/snapclean",
+    image: "/photos/snapcleanpreview.gif",
+    technologies: ["React Native", "JavaScript"],
+    date: "2026",
+    features: [
+      "Photo Grouping: Automatically groups similar and duplicate photos from the gallery.",
+      "Bulk Deletion: Allows mass deletion of selected photos to free up storage space.",
+      "Intuitive UI: Clean and user-friendly interface for managing photo collections.",
+    ],
+  },
   {
     name: "I Vinili Di Maurizio",
     description:

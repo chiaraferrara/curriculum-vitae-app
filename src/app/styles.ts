@@ -1,20 +1,14 @@
 import styled from "@emotion/styled";
+
 export const Container = styled.div`
-  .title {
-    text-align: center;
-    font-size: 54px;
-    margin-bottom: 60px;
-    padding: 3em 0;
-    border-bottom: 1px solid #e4eaec;
-    p {
-      font-size: 24px;
-      max-width: 400px;
-    }
-  }
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
 `;
 
 export const TimelineList = styled.ul`
-  line-height: 1.4em;
+  line-height: 1.6;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -22,148 +16,200 @@ export const TimelineList = styled.ul`
 `;
 
 export const TimelineItem = styled.li`
-  padding-left: 40px;
+  padding-left: 3rem;
   position: relative;
+  margin-bottom: var(--spacing-lg);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 export const TimelineInfo = styled.div`
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin: 0 0 0.5em 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 0 0 var(--spacing-xs) 0;
   text-transform: uppercase;
-  ##000000-space: nowrap;
+  color: var(--color-text-light);
+  white-space: nowrap;
 `;
 
-export const TimelineMarker = styled.div<{ primaryColor?: string }>`
+export const TimelineMarker = styled.div<{ primaryColor?: string; isLast?: boolean }>`
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 15px;
+  width: 2px;
+  background: var(--color-border);
+
   &:before {
-    background: ${(props) => props.primaryColor || "#313233"};
-    border: 3px solid transparent;
-    border-radius: 100%;
+    background: ${(props) => props.primaryColor || "var(--color-accent)"};
+    border: 3px solid var(--color-background);
+    border-radius: 50%;
     content: "";
     display: block;
-    height: 15px;
+    height: 12px;
     position: absolute;
     top: 4px;
-    left: -2px;
-    width: 15px;
-    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+    left: -5px;
+    width: 12px;
+    transition: all var(--transition-base);
+    box-shadow: 0 0 0 2px var(--color-background);
   }
+
   &:after {
     content: "";
-    width: 3px;
-    background: #000000;
+    width: 2px;
+    background: var(--color-border);
     display: block;
     position: absolute;
-    top: 24px;
+    top: 20px;
     bottom: 0;
-    left: 6px;
-  }
-  .timeline-item:last-child & {
-    &:after {
-      content: none;
-    }
+    left: 0;
+    ${(props) => (props.isLast ? "display: none;" : "")}
   }
 `;
 
 export const TimelineContent = styled.div`
-  padding-bottom: 40px;
+  padding-bottom: var(--spacing-md);
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 var(--spacing-xs) 0;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin: 0;
+  }
+
   p:last-child {
     margin-bottom: 0;
   }
 `;
 
 export const MainHeading = styled.h1`
-  font-size: 36px;
-  font-weight: bold;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
 `;
 
 export const SchoolContainer = styled.div`
-  background: ##000000;
-  color: #000;
-  padding: 20px;
-  border-radius: 2em;
-  margin-bottom: 20px;
-  border: 2px solid #000000;
-  transition: all 0.3s ease-in-out;
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--color-accent);
+    transform: scaleY(0);
+    transition: transform var(--transition-base);
+  }
 
   &:hover {
-    background: #383636;
-    color: #ffffff;
-    cursor: crosshair;
+    border-color: var(--color-accent-hover);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 
-    div {
-      background: #ffffff;
-      color: #000000;
+    &::before {
+      transform: scaleY(1);
     }
   }
 `;
 
 export const SchoolHeading = styled.h2`
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
 `;
 
 export const YearHeading = styled.h3`
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 `;
 
 export const Degree = styled.p`
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
-  margin: 5px 0;
+  margin: var(--spacing-xs) 0;
+  color: var(--color-text);
 `;
 
 export const Skills = styled.p`
-  font-size: 16px;
-  margin: 5px 0;
+  font-size: 0.875rem;
+  margin: var(--spacing-xs) 0 0 0;
+  color: var(--color-text-light);
+  line-height: 1.6;
 `;
 
 export const Wrapper = styled.div`
-  width: max(70%);
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
 `;
 
 export const Skill = styled.div`
-  margin-bottom: 35px;
+  margin-bottom: var(--spacing-lg);
   position: relative;
-  overflow-x: hidden;
 `;
 
 export const SkillP = styled.p`
-  font-size: 12x;
-  font-weight: 700;
-  color: #262527;
-  margin: 0 0 0px 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-xs) 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 `;
 
 export const SkillBar = styled.div`
   width: 100%;
-  height: 3px;
-  background: #dccad6;
+  height: 8px;
+  background: var(--color-border);
   position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
 
   span {
     position: absolute;
-    right: 10px;
-    top: -30px;
-    font-size: 18px;
-    padding: 3px 0;
+    right: 0;
+    top: -24px;
+    font-size: 0.875rem;
     font-weight: 500;
-    color: #383636;
+    color: var(--color-text-light);
   }
 `;
 
 export const Bar = styled.div`
   height: 100%;
-  background: #2f3031;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover));
   position: relative;
+  border-radius: var(--radius-sm);
+  transition: width var(--transition-slow);
 `;
